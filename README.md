@@ -1,98 +1,29 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-007
+Q- What is JSX, and why is it used?
+A- JSX (JavaScript XML) is a syntax extension for JavaScript used in React.
+It allows developers to write HTML-like code directly inside JavaScript.
+JSX makes UI code more readable and easier to visualize. Behind the scenes,
+it gets compiled into React createElement() calls.
 
-### 📅 Deadline For 60 marks: 27th September, 2025 (11:59 pm ⏱️)
+Q- What is the difference between State and Props?
+A- Props are used to pass data from a parent component to a child component.
+They are read-only and cannot be modified by the receiving component.
+State, on the other hand, is managed within a component itself.
+It is mutable and used to handle dynamic data and UI updates.
 
-### 📅 No Deadline For 50 marks
+Q- What is the useState hook, and how does it work?
+A - The useState hook is a React function for adding state to functional components.
+It returns an array with two values: the current state and a function to update it.
+When the update function is called, React re-renders the component.
+This makes it easy to manage dynamic data like form inputs or toggles.
 
-### 📅 Deadline For 30 marks: Any time after 27th September , 2025 (11:59pm⏱️).
+Q- How can you share state between components in React?
+A - We can share state by lifting it up to the nearest common parent component.
+The parent holds the state and passes it down as props to its children.
+For complex apps, state can be shared using Context API.
+Alternatively, external libraries like Redux or Zustand can manage global state.
 
----
-
-# Private Repository: https://classroom.github.com/a/VVl8VKya
-
-# Customer Support Zone
-
-This project is a React-based **Customer Support Zone** designed to display customer tickets, track progress, and mark them as resolved. It follows a Figma design and includes additional features like status management, responsiveness, and toast notifications using **React-Toastify**.
-
----
-
-## 📌 Features & Requirements
-
-### ✅ Navbar
-
-- Website name/logo on the **left**.
-- Menu items and **New Ticket** button on the **right**.
-
-### ✅ Banner
-
-- Banner section designed according to Figma.
-- Shows a **linear gradient** background.
-- Displays ticket statistics:
-
-  - **In Progress Count**
-  - **Resolved Count** (default = 0).
-
-### ✅ Main Section
-
-1. **JSON Data **
-
-   - Created **10–15 tickets** with the following properties:
-
-     - `id`, `title`, `description`, `customer`, `priority`, `status`, `createdAt`.
-
-2. **Ticket Cards**
-
-   - Display all ticket information in a **card layout**.
-   - Cards arranged in a **2-column grid** (left side).
-
-3. **Task Status Section**
-
-   - Clicking a card adds it to the **Task Status Section** (right side) and shows alert. It will increase the count of in-progress in banner
-   - Task Status shows:
-
-     - Ticket Title
-     - **Complete Button**
-
-   - Clicking **Complete Button**:
-
-     - show alert
-
-### ✅ Footer
-
-- Designed according to Figma.
-
-### ✅ Responsiveness
-
-- The entire website is **responsive** for mobile devices.
-
-### ✅ Readme:
-
-Create a README file to answer the following question-
-
-- What is JSX, and why is it used?
-- What is the difference between State and Props?
-- What is the useState hook, and how does it work?
-- How can you share state between components in React?
-- How is event handling done in React?
-
----
-
-###
-
-## 📌 Challenge Requirements
-
-### 🔔 React-Toastify
-
-- Used **React-Toastify** to replace all alerts with stylish toast notifications.
-
-### 📝 Task Completion Logic
-
-Clicking **Complete Button**:
-
-1. It is **removed from Task Status**.
-2. It is added to the **Resolved List**.
-3. The **In Progress count decreases**.
-4. The **Resolved count increases**.
-5. It is removed from the **Customer Tickets list**.
-
----
+Q- How is event handling done in React?
+A- Event handling in React is done using camelCase syntax, like onClick.
+You pass a function as the event handler instead of a string.
+React events are wrapped in a synthetic event system for cross-browser support.
+This ensures consistent behavior across different environments.
