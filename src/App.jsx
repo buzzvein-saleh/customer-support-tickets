@@ -18,7 +18,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/src/data/tickets.json")
+    fetch("/tickets.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load tickets.json");
         return res.json();
