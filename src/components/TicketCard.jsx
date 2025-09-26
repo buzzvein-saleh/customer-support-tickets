@@ -1,16 +1,6 @@
 import React from "react";
 
-const TicketCard = ({ ticket, onSelect }) => {
-  const priorityColor = {
-    "HIGH PRIORITY": "badge-error",
-    "MEDIUM PRIORITY": "badge-warning",
-    "LOW PRIORITY": "badge-success",
-  };
-  const statusColor = {
-    Open: "badge-success",
-    "In-Progress": "badge-warning",
-    Resolved: "badge-info",
-  };
+const TicketCard = ({ ticket, onSelect, priorityColor, statusColor }) => {
   return (
     <div
       className="bg-white rounded-xl shadow p-4 mb-4 border hover:shadow-lg transition cursor-pointer"
