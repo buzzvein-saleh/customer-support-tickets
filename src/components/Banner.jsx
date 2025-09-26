@@ -5,7 +5,7 @@ import vector2 from "../../assets/vector2.png";
 const Banner = ({ inProgressCount, resolvedCount }) => (
   <section className="w-full flex flex-col md:flex-row gap-6 mt-6">
     {/* In-Progress Card */}
-    <div className="flex-1 relative rounded-xl overflow-hidden min-h-[160px] flex items-center justify-center bg-gradient-to-br from-[#7B2FF2] to-[#F357A8]">
+    <div className="flex-1 relative rounded-xl overflow-hidden min-h-[160px] flex items-center justify-center bg-gradient-to-br from-[#422AD5] to-[#7B2FF2]">
       <img
         src={vector1}
         alt="vector1"
@@ -19,7 +19,7 @@ const Banner = ({ inProgressCount, resolvedCount }) => (
       </div>
     </div>
     {/* Resolved Card */}
-    <div className="flex-1 relative rounded-xl overflow-hidden min-h-[160px] flex items-center justify-center bg-gradient-to-br from-[#43E97B] to-[#38F9D7]">
+    <div className="flex-1 relative rounded-xl overflow-hidden min-h-[160px] flex items-center justify-center bg-gradient-to-br from-[#43E97B] to-[#11998e]">
       <img
         src={vector2}
         alt="vector2"

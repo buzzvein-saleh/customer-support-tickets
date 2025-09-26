@@ -56,7 +56,13 @@ function App() {
           inProgressCount={inProgress.length}
           resolvedCount={resolved.length}
         />
-        <div className="flex flex-col md:flex-row gap-8 mt-8">
+
+        {/* Customer Tickets Header */}
+        <h2 className="text-2xl font-semibold text-gray-800 mt-8">
+          Customer Tickets
+        </h2>
+
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Left: Tickets */}
           <div className="flex-1 md:w-2/3">
             <TicketList
@@ -64,8 +70,13 @@ function App() {
               onSelect={handleSelectTicket}
             />
           </div>
+
           {/* Right: Task Status & Resolved */}
           <div className="md:w-1/3 flex flex-col gap-6">
+            {/* Task Status Header */}
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Task Status
+            </h2>
             <TaskStatus tasks={inProgress} onComplete={handleComplete} />
             <ResolvedList resolved={resolved} />
           </div>
